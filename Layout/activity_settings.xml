@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/themeColor"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backBtnSE"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/back_btn"
+            android:src="@drawable/back_02" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:contentDescription="@string/settings"
+            android:gravity="center"
+            android:text="@string/set_Theme"
+            android:textColor="?attr/Header_Text_Color"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:contentDescription="@string/settings"
+            android:gravity="center"
+            android:text="@string/Theme_Styles"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:background="#2B2B2B">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/MagentaTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Magenta" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/OrangeTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Orange" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/PinkTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Pink" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/PurpleTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Purple" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/RedTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Red" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:background="#2B2B2B">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/CyanTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Cyan" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Lime_GreenTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Lime_Green" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Mint_GreenTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Mint_Green" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/BlueTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Blue" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/YellowTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Yellow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:contentDescription="@string/settings"
+            android:gravity="center"
+            android:text="@string/Theme_Styles2"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:background="#2B2B2B">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/TomatoTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Tomato" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Babe_PinkTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Babe_Pink" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Pastel_MagentaTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Pastel_Magenta" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Pastel_PurpleTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Pastel_Purple" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Pastel_CyanTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Pastel_Cyan" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:contentDescription="@string/settings"
+            android:gravity="center"
+            android:text="@string/Theme_Styles3"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:background="#2B2B2B">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/WhiteTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Custom_White" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Amoled_PinkTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Amoled_Pink"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/AmoledTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Amoled" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Amoled_PurpleTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Amoled_Purple" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Amoled_CyanTheme"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/circle"
+            android:tint="@color/Amoled_Cyan" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/sort_by"
+            android:background="@color/black"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:paddingStart="5dp"
+            android:gravity="center|start"
+            tools:ignore="RtlSymmetry" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sortBtn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/sorting_01"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+ <!--   <TextView
+        android:id="@+id/versionName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/version_name"
+        android:textStyle="bold"
+        android:background="@color/black"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:padding="16dp"/> -->
+
+</LinearLayout>

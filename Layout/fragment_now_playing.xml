@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".NowPlaying">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/songImgNP"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/eun_hye"
+        android:scaleType="centerCrop" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/visualizer_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="6dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/i_02" />
+
+    <TextView
+        android:id="@+id/songNameNP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@id/playPauseBtnNP"
+        android:layout_toEndOf="@id/songImgNP"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif-medium"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/SongName"
+        android:textColor="?attr/Text_Color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/songArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/songImgNP"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_toStartOf="@+id/playPauseBtnNP"
+            android:ellipsize="marquee"
+            android:layout_below="@+id/songNameNP"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/artist_Name"
+            android:textColor="#A6A6A6"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+       <!-- <ImageView
+            android:id="@+id/previousBtnNP"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/nextBtnNP"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/next_btn"
+            android:src="@drawable/previous_btn_03" /> -->
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/playPauseBtnNP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:contentDescription="@string/playpause_btn"
+        android:focusable="true"
+        app:icon="@drawable/play_btn"
+        app:iconTint="?attr/themeColor"
+        app:strokeColor="?attr/themeColor"
+        app:strokeWidth="1.5dp" />
+
+      <!--  <ImageView
+            android:id="@+id/nextBtnNP"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/next_btn"
+            android:src="@drawable/next_btn_03" /> -->
+
+</RelativeLayout>

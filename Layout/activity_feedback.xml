@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/themeColor"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backBtnFA"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/back_btn"
+            android:src="@drawable/back_02" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:contentDescription="@string/feedback"
+            android:gravity="center"
+            android:text="@string/feedback_activity_text"
+            android:textColor="?attr/Header_Text_Color"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/topicFA"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="60dp"
+        android:inputType="textEmailSubject"
+        android:hint="@string/topic_feedback"
+        android:paddingHorizontal="16dp"
+        android:gravity="center|start" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailFA"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email_feedback"
+        android:paddingHorizontal="16dp"
+        android:gravity="center|start" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/feedbackMsgFA"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/feedback"
+        android:paddingHorizontal="16dp"
+        android:gravity="center|start" />
+
+    <android.widget.Button
+        android:id="@+id/sendFA"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/custom_button" />
+
+</LinearLayout>
